@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-poppins {
+          font-family: 'Poppins';
+        }
+        .font-title {
+          font-family: 'ADLaM Display';
+        }
+        .bg-primary {
+            background-color: #f4f7ff;
+        }
+        .bg-secondary {
+            background-color: rgb(55, 82, 253);
+        }
+      </style>
+</head>
+<body class="font-poppins bg-primary pt-6 w-screen h-screen">
+    <header class="max-w-screen-xl lg:container lg:mx-auto">
+        <nav class="mt-6 bg-white p-4 rounded-lg shadow-md flex justify-between items-center">
+            <div class="flex gap-4 items-center">
+                <img class="size-10" src="assets/logo.png" alt="">
+                <div class="text-3xl">Dev <span class="font-bold">Board</span></div>
+            </div>
+            <div class="flex gap-6 items-center">
+                <div class="flex gap-3 items-center bg-gray-100 p-3 rounded-3xl">
+                    <img class="size-6" src="assets/checkbox.png" alt="">
+                    <div class="font-bold text-lg">23</div>
+                </div>
+                <img src="assets/theme-btn.png" alt="">
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="max-w-screen-xl lg:container lg:mx-auto mx-3">
+        <div class="flex gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-md mt-6 flex flex-col gap-6">
+                    <!-- info board -->
+                    <div class="flex gap-6 h-32">
+                        <div class="p-6 bg-primary rounded-lg">
+                            <div class="flex items-center gap-6">
+                                <img src="assets/checkbox.png" alt="">
+                                <div>
+                                    <p class="bg-gray-100">Task Assigned</p>
+                                    <div class="mt-2 text-4xl font-bold">6</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1 bg-blue-500 rounded-lg p-6">
+                            <div class="flex justify-center items-center gap-6">
+                                <img src="assets/board.png" alt="">
+                                <p class=" text-xl text-white">Discover Something New Today!</p>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-primary rounded-lg">
+                            <div class="flex gap-6">
+                                <img src="assets/calender.png" alt="">
+                                <span class="text-lg font-bold" id="current-date"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cards-container -->
+                    <div class="grid grid-cols-3 gap-6 rounded-lg">
+                        <!-- card-1 -->
+                        <div class="bg-primary p-8 rounded-lg flex flex-col gap-6">
+                            <h1 class="bg-white p-2 rounded-lg">ShopEase</h1>
+                            <h1 class="text-xl font-bold">Fix Mobile Button Issue</h1>
+                            <p class="bg-white p-4 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
+
+                            <div class="flex gap-6 justify-between items-center">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p class="font-semibold mt-2">12th August 2025</p>
+                                </div>
+                                <button class="p-6 bg-secondary text-white rounded-lg btn font-semibold">completed</button>
+                            </div>
+                        </div>
+                        <!-- card-2 -->
+                        <div class="bg-primary p-8 rounded-lg flex flex-col gap-6">
+                            <h1 class="bg-white p-2 rounded-lg">CloudSync</h1>
+                            <h1 class="text-xl font-bold">Add Dark Mode</h1>
+                            <p class="bg-white p-4 rounded-lg">Store the user's preference in localStorage, update CSS...</p>
+
+                            <div class="flex gap-6 justify-between items-center">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p class="font-semibold mt-2">12th August 2025</p>
+                                </div>
+                                <button class="p-6 bg-secondary text-white rounded-lg btn font-semibold">completed</button>
+                            </div>
+                        </div>
+                        <!-- card-3 -->
+                        <div class="bg-primary p-8 rounded-lg flex flex-col gap-6">
+                            <h1 class="bg-white p-2 rounded-lg">SwiftPay</h1>
+                            <h1 class="text-xl font-bold">Optimize Home page</h1>
+                            <p class="bg-white p-4 rounded-lg">Debug using Chrome DevTools, check for overlapping..</p>
+
+                            <div class="flex gap-6 justify-between items-center">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p class="font-semibold mt-2">12th August 2025</p>
+                                </div>
+                                <button class="p-6 bg-secondary text-white rounded-lg btn font-semibold">completed</button>
+                            </div>
+                        </div>
+                        <!-- card-4 -->
+                        <div class="bg-primary p-8 rounded-lg flex flex-col gap-6">
+                            <h1 class="bg-white p-2 rounded-lg">Meta</h1>
+                            <h1 class="text-xl font-bold">Add new emoji</h1>
+                            <p class="bg-white p-4 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
+
+                            <div class="flex gap-6 justify-between items-center">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p class=" font-semibold mt-2">12th August 2025</p>
+                                </div>
+                                <button class="btn p-6 bg-secondary text-white rounded-lg font-semibold">completed</button>
+                            </div>
+                        </div>
+                        <!-- card-5 -->
+                        <div class="bg-primary p-8 rounded-lg flex flex-col gap-6">
+                            <h1 class="bg-white p-2 rounded-lg">Google LLC</h1>
+                            <h1 class="text-xl font-bold">Integrate OpenAI API</h1>
+                            <p class="bg-white p-4 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
+
+                            <div class="flex gap-6 justify-between items-center">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p class=" font-semibold mt-2">12th August 2025</p>
+                                </div>
+                                <button class="btn p-6 bg-secondary text-white rounded-lg font-semibold">completed</button>
+                            </div>
+                        </div>
+                        <!-- card-6 -->
+                        <div class="bg-primary p-8 rounded-lg flex flex-col gap-6">
+                            <h1 class="bg-white p-2 rounded-lg">Glassdoar</h1>
+                            <h1 class="text-xl font-bold">Improve Job searching</h1>
+                            <p class="bg-white p-4 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
+
+                            <div class="flex gap-6 justify-between items-center">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p class="font-semibold mt-2">12th August 2025</p>
+                                </div>
+                                <button class="btn p-6  bg-secondary text-white rounded-lg font-semibold">completed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md mt-6 flex flex-col gap-6 w-1/3 items-center">
+                        <div class="flex gap-2">
+                            <img src="assets/activity.png" alt="">
+                            <p class="text-lg font-semibold">Activity Log</p>
+                        </div>
+                        <button class="btn bg-secondary rounded-lg p-6 text-white font-semibold">Clear History</button>
+                </div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
