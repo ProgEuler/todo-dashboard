@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desk</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
@@ -26,17 +26,17 @@
         }
       </style>
 </head>
-<body class="font-poppins bg-primary pt-6 w-screen h-screen">
+<body class="overflow-x-hidden font-poppins bg-primary pt-6 w-screen h-screen">
     <header class="max-w-screen-xl lg:container lg:mx-auto">
         <nav class="mt-6 bg-white p-4 rounded-lg shadow-md flex justify-between items-center">
             <div class="flex gap-4 items-center">
                 <img class="size-10" src="assets/logo.png" alt="">
                 <div class="text-3xl">Dev <span class="font-bold">Board</span></div>
             </div>
-            <div class="flex gap-6 items-center">
+            <div class="flex gap-8 items-center">
                 <div class="flex gap-3 items-center bg-gray-100 p-3 rounded-3xl">
                     <img class="size-6" src="assets/checkbox.png" alt="">
-                    <div class="font-bold text-lg">23</div>
+                    <div class="font-bold text-xl">23</div>
                 </div>
                 <img src="assets/theme-btn.png" alt="">
             </div>
@@ -58,12 +58,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex-1 bg-blue-500 rounded-lg p-6">
-                            <div class="flex justify-center items-center gap-6">
-                                <img src="assets/board.png" alt="">
-                                <p class=" text-xl text-white">Discover Something New Today!</p>
+                        <a class="flex-1" href="blog.html">
+                            <div class="bg-gradient-to-r from-blue-600 to-indigo-400 hover:from-blue-700 hover:to-indigo-500 transition rounded-lg p-6">
+                                <div class="flex justify-center items-center gap-6">
+                                    <img src="assets/board.png" alt="">
+                                    <p class=" text-2xl text-white">Discover Something New Today!</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                         <div class="p-6 bg-primary rounded-lg">
                             <div class="flex gap-6">
                                 <img src="assets/calender.png" alt="">
@@ -75,7 +77,9 @@
                     <div class="grid grid-cols-3 gap-6 rounded-lg">
                         <!-- card-1 -->
                         <div class="bg-primary p-8 rounded-lg flex flex-col gap-6">
-                            <h1 class="bg-white p-2 rounded-lg">ShopEase</h1>
+                            <div>
+                                <span class="bg-white p-3 rounded-lg">ShopEase</span>
+                            </div>
                             <h1 class="text-xl font-bold">Fix Mobile Button Issue</h1>
                             <p class="bg-white p-4 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
 
@@ -89,7 +93,9 @@
                         </div>
                         <!-- card-2 -->
                         <div class="bg-primary p-8 rounded-lg flex flex-col gap-6">
-                            <h1 class="bg-white p-2 rounded-lg">CloudSync</h1>
+                            <div>
+                                <span class="bg-white p-3 rounded-lg">CloudSync</span>
+                            </div>
                             <h1 class="text-xl font-bold">Add Dark Mode</h1>
                             <p class="bg-white p-4 rounded-lg">Store the user's preference in localStorage, update CSS...</p>
 
@@ -103,7 +109,9 @@
                         </div>
                         <!-- card-3 -->
                         <div class="bg-primary p-8 rounded-lg flex flex-col gap-6">
-                            <h1 class="bg-white p-2 rounded-lg">SwiftPay</h1>
+                            <div>
+                                <span class="bg-white p-3 rounded-lg">SwiftPay</span>
+                            </div>
                             <h1 class="text-xl font-bold">Optimize Home page</h1>
                             <p class="bg-white p-4 rounded-lg">Debug using Chrome DevTools, check for overlapping..</p>
 
@@ -117,7 +125,11 @@
                         </div>
                         <!-- card-4 -->
                         <div class="bg-primary p-8 rounded-lg flex flex-col gap-6">
-                            <h1 class="bg-white p-2 rounded-lg">Meta</h1>
+                            <div>
+                                <span class="bg-white p-3 rounded-lg">
+                                    Meta
+                                </span>
+                            </div>
                             <h1 class="text-xl font-bold">Add new emoji</h1>
                             <p class="bg-white p-4 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
 
@@ -131,7 +143,9 @@
                         </div>
                         <!-- card-5 -->
                         <div class="bg-primary p-8 rounded-lg flex flex-col gap-6">
-                            <h1 class="bg-white p-2 rounded-lg">Google LLC</h1>
+                            <div>
+                                <span class="bg-white p-3 rounded-lg">Google LLC</span>
+                            </div>
                             <h1 class="text-xl font-bold">Integrate OpenAI API</h1>
                             <p class="bg-white p-4 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
 
@@ -145,7 +159,9 @@
                         </div>
                         <!-- card-6 -->
                         <div class="bg-primary p-8 rounded-lg flex flex-col gap-6">
-                            <h1 class="bg-white p-2 rounded-lg">Glassdoar</h1>
+                            <div>
+                                <span class="bg-white p-3 rounded-lg">Glassdoar</span>
+                            </div>
                             <h1 class="text-xl font-bold">Improve Job searching</h1>
                             <p class="bg-white p-4 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
 
